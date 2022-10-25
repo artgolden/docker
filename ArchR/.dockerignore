@@ -1,0 +1,5 @@
+archr102_docker.tar
+archr102_macs2_docker.tar
+archr102_macs2_chromvar_docker.tar
+*.tar
+tmp/
