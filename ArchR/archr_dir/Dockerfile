@@ -33,6 +33,7 @@ RUN R -e "Sys.setenv(GITHUB_PAT='$GITHUB_TOKEN')"
 RUN R -e "devtools::install_github('GreenleafLab/ArchR', ref='release_1.0.2', repos = BiocManager::repositories())"
 RUN R -e "ArchR::installExtraPackages()"
 RUN R -e "devtools::install_github('GreenleafLab/chromVARmotifs')"
+RUN R -e "install.packages('hexbin')"
 EXPOSE 8787 8788
 
 ENV USER rstudio
