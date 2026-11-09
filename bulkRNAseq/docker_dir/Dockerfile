@@ -23,7 +23,8 @@ RUN R -e "install.packages(c('markdown', 'rmdformats'))"
 RUN R -e "install.packages(c('ggpubr', 'patchwork'))"
 RUN R -e "install.packages(c('pheatmap', 'future'))"
 RUN R -e "BiocManager::install(c('DESeq2'))"
-
+RUN R -e "install.packages(c('readxl', 'ggrepel','rmarkdown','knitr'))"
+RUN R -e "BiocManager::install(c('apeglm'))"
 EXPOSE 8787 8788
 
 ENV USER rstudio
